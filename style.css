@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9ff;
+    color: #27324a;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #171b3b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #b9b8ff;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #b9b8ff;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 25px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #171b3b, #5145b8);
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.intro {
+    color: #c9c7ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #d4d2ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.intro) {
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c5c2ff;
+    color: #171b3b;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.section > h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #39317f;
+    margin-bottom: 20px;
+}
+
+#about > p {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.education {
+    background-color: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-left: 5px solid #7165df;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(23, 27, 59, 0.06);
+}
+
+.education h3 {
+    color: #5145b8;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #606982;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.skill {
+    background-color: #e9e7ff;
+    color: #39317f;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #d8d4ff;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #d6d2ff;
+    transform: translateY(-4px);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid #e5e5f5;
+    box-shadow: 0 7px 25px rgba(23, 27, 59, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(23, 27, 59, 0.12);
+}
+
+.project-number {
+    color: #7165df;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    color: #39317f;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.tech {
+    color: #5145b8;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+#contact {
+    background-color: #efeeff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a {
+    color: #5145b8;
+    text-decoration: none;
+}
+
+.contact-card a:hover,
+.contact-card a:focus {
+    text-decoration: underline;
+}
+
+.contact-label {
+    color: #77718e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 12px;
+}
+
+footer {
+    background-color: #171b3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        overflow-wrap: anywhere;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 48px 20px;
+    }
+
+    .section > h2 {
+        font-size: 27px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+}
